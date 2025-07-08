@@ -1,32 +1,31 @@
+<!-- File: src/App.vue -->
 <template>
   <div>
-    <nav class="navbar">
-      <ul class="nav-list">
-        <li>
-          <router-link to="/" exact-active-class="active">Beranda</router-link>
-        </li>
-        <li>
-          <router-link to="/produk" active-class="active">Produk</router-link>
-        </li>
-        <li>
-          <router-link to="/pesanan" active-class="active">Pesanan</router-link>
-        </li>
-        <li>
-          <router-link to="/pengaturan" active-class="active"
-            >Pengaturan</router-link
-          >
-        </li>
-        <li>
-          <router-link to="/profil" active-class="active">Profil</router-link>
-        </li>
-      </ul>
-    </nav>
-    <router-view />
+    <Navbar :imageUrl="fotoProfil" />
+    <router-view :fotoProfil="fotoProfil" @update-foto="updateFotoProfil" />
   </div>
 </template>
 
-<script>
-export default {
-  name: "App",
-};
+<script setup>
+import { ref, onMounted } from "vue";
+import Navbar from "./components/Navbar.vue";
+
+// Gunakan fallback foto default
+const defaultFoto = new URL("./assets/profile-default.png", import.meta.url)
+  .href;
+const fotoProfil = ref(defaultFoto);
+
+// Cek localStorage
+onMounted(() => {
+  const simpanan = localStorage.getItem("fotoProfil");
+  if (simpanan) {
+    fotoProfil.value = simpanan;
+  }
+});
+
+// Update jika user upload foto baru
+function updateFotoProfil(fotoBaru) {
+  fotoProfil.value = fotoBaru;
+  localStorage.setItem("fotoProfil", fotoBaru);
+}
 </script>
