@@ -44,7 +44,7 @@
 <script setup>
 import { ref, computed, onMounted } from "vue";
 import axios from "axios";
-import Ps5 from "../assets/Ps5.jpg";
+import Ps5 from "../assets/PS5.jpg";
 import Gitar from "../assets/Gitar.jpg";
 import Rumah from "../assets/Rumah.jpg";
 import Drone from "../assets/Drone.jpg";
