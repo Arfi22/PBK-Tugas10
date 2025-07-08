@@ -30,7 +30,7 @@
 <script setup>
 import { useRouter } from "vue-router";
 const router = useRouter();
-import Ps5 from "../assets/Ps5.jpg";
+import PS5 from "../assets/PS5.jpg";
 import PocoF6 from "../assets/PocoF6.jpg";
 import Ps4 from "../assets/Ps4.jpg";
 import StickPs5 from "../assets/StickPs5.jpg";
@@ -40,7 +40,7 @@ const produkList = [
     id: 1,
     nama: "PS 5",
     harga: "Rp4.650.000",
-    gambar: Ps5,
+    gambar: PS5,
   },
   {
     id: 2,
