@@ -24,7 +24,7 @@ import ShockAerox from "../assets/ShockAerox.jpg";
 import Fortuner from "../assets/Fortuner.jpg";
 import Drone from "../assets/Drone.jpg";
 import Gitar from "../assets/Gitar.jpg";
-import Ps5 from "../assets/Ps5.jpg";
+import Ps5 from "../assets/PS5.jpg";
 import Sepeda from "../assets/Sepeda.jpg";
 import Ip16 from "../assets/Iphone16.jpg";
 import Rumah from "../assets/Rumah.jpg";
