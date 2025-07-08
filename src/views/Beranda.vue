@@ -24,7 +24,7 @@ import ShockAerox from "../assets/ShockAerox.jpg";
 import Fortuner from "../assets/Fortuner.jpg";
 import Drone from "../assets/Drone.jpg";
 import Gitar from "../assets/Gitar.jpg";
-import Ps5 from "../assets/PS5.jpg";
+import PS5 from "../assets/PS5.jpg";
 import Sepeda from "../assets/Sepeda.jpg";
 import Ip16 from "../assets/Iphone16.jpg";
 import Rumah from "../assets/Rumah.jpg";
@@ -79,7 +79,7 @@ const produkList = [
     nama: "PS 5",
     harga: "Rp7.500.000",
     lokasi: "Pekanbaru",
-    gambar: Ps5,
+    gambar: PS5,
   },
   {
     id: 108,

@@ -44,7 +44,7 @@
 <script setup>
 import { ref, computed, onMounted } from "vue";
 import axios from "axios";
-import Ps5 from "../assets/PS5.jpg";
+import PS5 from "../assets/PS5.jpg";
 import Gitar from "../assets/Gitar.jpg";
 import Rumah from "../assets/Rumah.jpg";
 import Drone from "../assets/Drone.jpg";
@@ -63,7 +63,7 @@ const produkStatic = [
     nama: "PS 5",
     harga: "Rp7.500.000",
     kategori: "Elektronik",
-    gambar: Ps5,
+    gambar: PS5,
   },
   {
     id: 2,
