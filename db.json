@@ -1,13 +1,14 @@
 {
   "users": [
     {
-      "id": "d4cf",
+      "id": 1,
       "nama": "arfiaksa",
       "email": "arfiaksa@gmail.com",
       "password": "aksa",
       "alamat": "",
-      "foto": ""
+      "foto": "",
+      "jenisKelamin": "Laki-laki"
     }
   ],
-  "products": []
+  "produk": []
 }
